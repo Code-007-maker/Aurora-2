@@ -1,0 +1,42 @@
+{
+    "citizen_1": {
+        "username": "citizen_1",
+        "email": "citizen@example.com",
+        "full_name": "Ramesh Kumar",
+        "hashed_password": "$2b$12$iD41glDy78l4TeOY4zZYyOGPO5Yq82.PdiMDRn9Iosa9KTLf.DfPa",
+        "role": "Citizen",
+        "ward_id": null
+    },
+    "city_admin": {
+        "username": "city_admin",
+        "email": "admin@example.com",
+        "full_name": "Municipal Commissioner",
+        "hashed_password": "$2b$12$jZDFJakOuTam00ih9l9.cOIqJLPnYHz44Shm1P82MWBxrNXOPHdHO",
+        "role": "City Admin",
+        "ward_id": null
+    },
+    "sys_admin": {
+        "username": "sys_admin",
+        "email": "arbajkhan95673@gmail.com",
+        "full_name": "Tech Ops Lead",
+        "hashed_password": "$2b$12$mOaW/ahOuG53yAmfVwW5nuPFcnrnj94r/Wn70VyYTOLx1.cWKheWC",
+        "role": "System Admin",
+        "ward_id": null
+    },
+    "2024kucp1060": {
+        "username": "2024kucp1060",
+        "email": "2024kucp1060@gmail.com",
+        "full_name": "2024kucp1060",
+        "hashed_password": "$2b$12$xP.BLPwFPOSHeA7d7PqX..ynVKz4i40x.qJyVuJVJLs8OR8UbUEB6",
+        "role": "City Admin",
+        "ward_id": null
+    },
+    "ak3529562": {
+        "username": "ak3529562",
+        "email": "ak3529562@gmail.com",
+        "full_name": "ak3529562",
+        "hashed_password": "$2b$12$hPnKRax.zSUPNFIESPVMfu91/NAn3oKoXQW1izSRhIMNBFwddi9G2",
+        "role": "City Admin",
+        "ward_id": null
+    }
+}

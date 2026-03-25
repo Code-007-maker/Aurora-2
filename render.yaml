@@ -1,0 +1,37 @@
+services:
+  # 1. Backend Service (FastAPI)
+  - type: web
+    name: aurora-backend
+    env: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_PASS
+        sync: false
+      - key: SECRET_KEY
+        generateValue: true
+      - key: MAIL_PORT
+        value: 465
+      - key: MAIL_SSL_TLS
+        value: "True"
+      - key: MAIL_STARTTLS
+        value: "False"
+
+  # 2. Frontend Service (Next.js)
+  - type: web
+    name: aurora-frontend
+    env: node
+    rootDir: frontend
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        fromService:
+          name: aurora-backend
+          type: web
+          property: host
